@@ -52,3 +52,31 @@
     height: 3px;
     background: #c7c7c7;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .footer-logo p {
+        font-size: 24px; /* Further decreased font size for smaller screens */
+    }
+
+    .footer-links {
+        gap: 10px; /* Further decreased the gap for smaller screens */
+        font-size: 10px; /* Further decreased font size for smaller screens */
+    }
+
+    .footer-icons-container img {
+        width: 20px; /* Further decreased icon size for smaller screens */
+        height: 20px; /* Further decreased icon size for smaller screens */
+    }
+
+    .footer-copyright {
+        gap: 10px; /* Further decreased the gap for smaller screens */
+        font-size: 10px; /* Further decreased font size for smaller screens */
+    }
+}
+
+
+
+
+
+

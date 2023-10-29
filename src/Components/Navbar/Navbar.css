@@ -74,3 +74,76 @@
     background: red;
     color: white;
 }
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+}
+.sidebar li{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor:pointer;
+    margin-left: 20px;
+}
+
+.sidebar .nav-login button{
+    width: 70px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.menu-icon img{
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+.cross-icon img{
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+.nav-menu .menu-icon{
+    display: none;
+}
+@media(max-width:800px) {
+    .nav-menu .hide{
+        display: none;
+    }
+    .nav-menu .menu-icon{
+        display: block;
+    }
+}
+@media(max-width:500px){
+    .sidebar{
+        width: 100%;
+    }
+    .nav-logo{
+        padding-top: 10px;
+        height: 20px;
+    }
+    .nav-logo p{
+        font-size: 28px;
+        font-weight: 600;
+        color: blue;
+    }
+}

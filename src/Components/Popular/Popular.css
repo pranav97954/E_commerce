@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    /* height: 90vh; */
 }
 .popular h1{
     color: black;
@@ -20,4 +20,24 @@
     margin: 10px;
     display: flex;
     gap: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .popular-item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Further decreased gap between items for smaller screens */
+    }
+    
+    .popular h1 {
+        font-size: 28px; /* Further decreased font size for smaller screens */
+    }
+
+    .popular hr {
+        width: 100px; /* Further decreased width of hr for smaller screens */
+        height: 3px; /* Further decreased height of hr for smaller screens */
+    }
+
+    
 }

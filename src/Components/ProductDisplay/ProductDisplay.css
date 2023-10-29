@@ -89,3 +89,18 @@
 .productdisplay-right-category span{
     font-weight: 500;
 }
+@media only screen and (max-width: 768px){
+    .productdisplay{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .productdisplay-img-list img{
+        height: 70px;
+    }
+    .productdisplay-main-img{
+        width: 250px;
+        height: 310px;
+        margin-right: 20px;
+    }
+}
